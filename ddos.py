@@ -1,3 +1,4 @@
+
 from random import choice
 import argparse
 import httpx
@@ -66,6 +67,7 @@ def main():
             print(f'successfully request {success}')
             print(f'web site down status {site_down}')
             print(f'failed request {args.num - success + site_down}')
+            exit()
     print('Invalid url try different url')
 
 
